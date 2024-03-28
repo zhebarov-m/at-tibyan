@@ -4,7 +4,7 @@ import {useState} from "react";
 import {iSura} from "@/entities/Sura/model/types/surah.ts";
 
 const SurahList = () => {
-    const [sortSurahes, setSortSurahes] = useState<iSura[]>([...surahes])
+    const [sortSurahes, _] = useState<iSura[]>([...surahes])
 
     return (
         <div className="
