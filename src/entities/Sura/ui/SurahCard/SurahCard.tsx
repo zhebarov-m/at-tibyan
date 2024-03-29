@@ -18,6 +18,7 @@ export const SurahCard = (props: SurahCardProps) => {
                 style={{fontFamily: 'Montserrat'}}
                 className="
                     flex
+                    flex-col
                     justify-between
                     lg:hover:bg-[#EBF9F9]
                     items-center
@@ -27,7 +28,11 @@ export const SurahCard = (props: SurahCardProps) => {
                     shadow-md
                     duration-500
                     m-1.5
-                    p-4
+                    xr:flex-row
+                    xr:m-0
+                    p-2
+                    xr:p-4
+                    max-w-full
                 "
             >
                 <div
@@ -67,7 +72,7 @@ export const SurahCard = (props: SurahCardProps) => {
                     </div>
                 </div>
                 <div>
-                    <div className="text-right">
+                    <div className="text-right hidden xr:block">
                         {surah.revelation_place === "makkah" ? (
                             <span>Мекка</span>
                         ) : (
