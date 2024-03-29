@@ -25,7 +25,7 @@ export const Header = () => {
                         <p className="lg: text-[#009c9c]">ЦЕНТР ИЗУЧЕНИЯ КОРАНА</p>
                     </Link>
                 </div>
-                <Navbar className=""/>
+                <Navbar className="hidden"/>
                 <div className="">
                     <button onClick={onToggleMenu}>
                         {collapsed ? BurgerIcon : CrossIcon}
