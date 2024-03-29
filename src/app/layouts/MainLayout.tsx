@@ -3,8 +3,9 @@ import {Outlet} from "react-router-dom";
 import {Sidebar} from "@/widgets/Sidebar";
 
 const MainLayout = () => {
+
     return (
-        <div>
+        <div className="dark:bg-gray-700">
             <Header/>
             <div className="flex">
                 <Sidebar/>

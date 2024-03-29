@@ -17,6 +17,8 @@ export const SurahCard = (props: SurahCardProps) => {
             <div
                 style={{fontFamily: 'Montserrat'}}
                 className="
+                dark:bg-gray-800
+                dark:text-gray-50
                     flex
                     flex-col
                     justify-between
@@ -53,6 +55,7 @@ export const SurahCard = (props: SurahCardProps) => {
                             border-[#2ca4ab]
                             bg-white
                             p-[3px]
+                            dark:text-gray-800
                         "
                     >
                         {id}
@@ -62,7 +65,7 @@ export const SurahCard = (props: SurahCardProps) => {
                     className="text-xs text-center text-[darkgrey]"
                 >
                     <div
-                        className="text-2xl h-12 flex justify-center items-center text-black"
+                        className="text-2xl h-12 flex justify-center items-center text-black dark:text-white"
                         style={{fontFamily: 'me_quran-Regular, monospace'}}
                     >{surah.name_arabic}</div>
                     <div>{surah.name_simple}</div>

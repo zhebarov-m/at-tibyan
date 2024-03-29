@@ -4,8 +4,8 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
-    darkMode: 'class',
     extend: {
       boxShadow: {
         'sura': '0 5x 10px 0 rgb(23 23 23 / 19%)',

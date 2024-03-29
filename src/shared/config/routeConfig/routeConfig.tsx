@@ -2,6 +2,7 @@ import {RouteProps} from "react-router-dom";
 import {HomePage} from "@/pages/home";
 import {LessonPage} from "@/pages/lessons";
 
+
 export enum AppRoutes {
     HOME = 'home',
     QURAN = 'quran',

@@ -1,7 +1,6 @@
 .navLinks {
     margin: 30px 10px 0;
     color: #222;
-    width: 100%;
 
     a {
         transition: background-color .1s ease-in-out;

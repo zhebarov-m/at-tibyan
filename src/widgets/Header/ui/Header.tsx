@@ -15,7 +15,7 @@ export const Header = () => {
     }
 
     return (
-        <header className="shadow-md">
+        <header className="shadow-md dark:bg-gray-800 dark:text-white">
             <div className="flex items-center justify-around p-2.5 2xl:container mx-auto">
                 <div className="logo">
                     <Link to={AppRoutes.HOME} className="flex-col justify-center font-bold">
