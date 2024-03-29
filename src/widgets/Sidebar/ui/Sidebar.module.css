@@ -1,0 +1,35 @@
+.navLinks {
+    margin: 30px 10px 0;
+    color: #222;
+    width: 100%;
+
+    a {
+        transition: background-color .1s ease-in-out;
+        padding: 12px;
+        border-radius: 6px;
+    }
+
+    span {
+        color: #009c9c;
+    }
+
+    a:global.active {
+        background-color: #009c9c;
+        color: white;
+        transition: background-color .2s ease-in-out;
+
+        span {
+            color: white;
+        }
+    }
+
+    a:global.active:hover {
+        background-color: #009c9c;
+        color: white;
+    }
+
+    a:hover {
+        background-color: #009c9c27;
+        color: black;
+    }
+}

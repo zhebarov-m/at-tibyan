@@ -2,7 +2,8 @@ import {Navbar} from "@/widgets/Navbar/ui/Navbar.tsx";
 import {Link} from "react-router-dom";
 import {AppRoutes} from "@/shared/config/routeConfig/routeConfig.tsx";
 import {useAppDispatch, useAppSelector} from "@/app/providers/StoreProvider/config/hooks.ts";
-import {selectCollapse, setCollapsed} from "@/widgets/Sidebar/model/slices/sidebarSlice.ts";
+import {BurgerIcon, CrossIcon} from "@/widgets/Header";
+import {selectCollapse, setCollapsed} from "@/widgets/Sidebar";
 
 export const Header = () => {
     const collapsed = useAppSelector(selectCollapse)
@@ -24,24 +25,10 @@ export const Header = () => {
                         <p className="lg: text-[#009c9c]">ЦЕНТР ИЗУЧЕНИЯ КОРАНА</p>
                     </Link>
                 </div>
-                <Navbar className="hidden md:flex"/>
-                <div className="flex md:hidden">
+                <Navbar className=""/>
+                <div className="">
                     <button onClick={onToggleMenu}>
-                        {
-                            collapsed
-                                ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                       strokeWidth={1.5}
-                                       stroke="currentColor" className="w-6 h-6">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12"/>
-                                </svg>
-                                : <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                       strokeWidth={1.5}
-                                       stroke="currentColor" className="w-6 h-6">
-                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                          d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"/>
-                                </svg>
-                        }
-
+                        {collapsed ? BurgerIcon : CrossIcon}
                     </button>
                 </div>
             </div>
