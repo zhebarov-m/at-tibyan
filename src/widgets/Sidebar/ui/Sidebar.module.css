@@ -1,4 +1,19 @@
+.sidebarContainer {
+    @apply border-2
+    bg-[#fff]
+    border-[#009c9c60]
+    transition-all
+    flex
+    flex-col
+    justify-between
+    absolute
+    h-[100vh]
+    z-10
+}
+
 .navLinks {
+    @apply flex flex-col;
+
     margin: 30px 10px 0;
     color: #222;
 

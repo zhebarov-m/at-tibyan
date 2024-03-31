@@ -10,6 +10,7 @@ const SurahList = () => {
     return (
         <div className={
             `
+            mt-8
             grid
             grid-cols-2
             grid-rows-5
@@ -27,7 +28,7 @@ const SurahList = () => {
             {sortSurahes?.map(surah => {
                 return (
                     <Link
-                        to={`/${surah.id}`}
+                        to={`surahes/${surah.id}`}
                         key={surah.id}
                     >
                         <SurahCard

@@ -28,7 +28,7 @@ export const Header = () => {
                 <Navbar className="hidden"/>
                 <div className="">
                     <button onClick={onToggleMenu}>
-                        {collapsed ? BurgerIcon : CrossIcon}
+                        {collapsed ? CrossIcon : BurgerIcon}
                     </button>
                 </div>
             </div>

@@ -5,7 +5,7 @@ import {Sidebar} from "@/widgets/Sidebar";
 const MainLayout = () => {
 
     return (
-        <div className="dark:bg-gray-700">
+        <div className="">
             <Header/>
             <div className="flex">
                 <Sidebar/>
