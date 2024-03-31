@@ -6,7 +6,7 @@ import Ayahs from "@/entities/Ayahs/ui/Ayahs";
 const AyahsList = () => {
   const { id } = useParams();
   const [ayahs, setAyahs] = useState<ISura[]>([]);
-  const [allSura, setAllSura] = useState(false);
+  const [allSura, _] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
