@@ -29,7 +29,7 @@ const AyahsList = () => {
           className={allSura ? "styles.modeAllSura" : "styles.modeLearnSura"}
         >
           {ayahs[0]?.ayahs.map((aya, index) => {
-            return <Ayahs index ={index} aya={aya} allSura={allSura} ayahs = {ayahs}/>;
+            return <Ayahs key = {aya.number} index ={index} aya={aya} allSura={allSura} ayahs = {ayahs}/>;
           })}
         </div>
       </div>
