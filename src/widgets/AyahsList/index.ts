@@ -1,0 +1,1 @@
+// export {AyahsList} from "./ui/AyahsList.tsx"

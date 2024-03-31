@@ -1,14 +1,11 @@
-import {useParams} from "react-router-dom";
+import AyahsList from "@/widgets/AyahsList/ui/AyahsList.tsx/AyahsList";
 
 const SurahPage = () => {
-    const {id} = useParams()
-    console.log(id)
-
-    return (
-        <div>
-            <h1>SURAH №{id}</h1>
-        </div>
-    );
+  return (
+    <div>
+      <AyahsList />
+    </div>
+  );
 };
 
 export default SurahPage;
