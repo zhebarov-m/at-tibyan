@@ -10,7 +10,8 @@ interface AyahsProps {
   index: number;
 }
 
-const Ayahs: FC<AyahsProps> = ({ aya, allSura, ayahs, index }) => {
+const Ayahs: FC<AyahsProps> = (props) => {
+  const { aya, allSura, ayahs, index } = props;
   const isBismillah =
     aya.text.includes("بِّسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ") || // 95 97
     aya.text.includes("بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ"); // остальные
