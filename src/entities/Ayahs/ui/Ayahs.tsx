@@ -1,5 +1,7 @@
 import { FC } from "react";
 import { IAyahs, ISura } from "../model/types/ayahs";
+import styles from "./Ayahs.module.css";
+import { Basmalla } from "./icons/Basmalla";
 
 interface AyahsProps {
   aya: IAyahs;
@@ -8,8 +10,8 @@ interface AyahsProps {
   index: number;
 }
 
-const Ayahs: FC<AyahsProps> = ({ aya, allSura, ayahs, index }) => {
-
+const Ayahs: FC<AyahsProps> = (props) => {
+  const { aya, allSura, ayahs, index } = props;
   const isBismillah =
     aya.text.includes("بِّسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ") || // 95 97
     aya.text.includes("بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ"); // остальные
@@ -25,11 +27,11 @@ const Ayahs: FC<AyahsProps> = ({ aya, allSura, ayahs, index }) => {
   return allSura ? (
     <span key={aya.number}>
       {isBismillah && (
-        <div className={"styles.bismillah"}>
-          <img src="../logo/Basmala.svg" alt="" />
+        <div className={styles.bismillah}>
+          {Basmalla}
         </div>
       )}
-      <span className={"styles.allSura"}>
+      <span className={styles.allSura}>
         {displayText}
         <span className={"styles.numberInSurah"}>﴿{aya.numberInSurah}﴾</span>
       </span>
@@ -44,24 +46,24 @@ const Ayahs: FC<AyahsProps> = ({ aya, allSura, ayahs, index }) => {
       // }
     >
       {isBismillah && (
-        <div className={"styles.bismillah"}>
-          <img src="../logo/Basmala.svg" alt="" />
+        <div className={styles.bismillah}>
+          {Basmalla}
         </div>
       )}
 
       <div
-        className={"styles.aya"}
+        className={styles.aya}
         //   onClick={() => {
         //     playAudio(aya.number);
         //   }}
       >
-        <div className={"styles.ayat"}>
+        <div className={styles.ayat}>
           <span>{displayText} </span>
           <span dir="ltr">
             {ayahs[0]?.number}:{aya.numberInSurah}
           </span>
         </div>
-        <span className={"styles.translate"} dir="ltr">
+        <span className={styles.translate} dir="ltr">
           {ayahs[1]?.ayahs[index].text}
         </span>
       </div>

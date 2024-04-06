@@ -1,0 +1,49 @@
+.bismillah {
+  display: flex;
+  justify-content: space-around;
+}
+
+.aya {
+  font-size: 1.5em;
+  word-spacing: 5px;
+  font-family: "me_quran Regular";
+  line-height: 2em;
+  margin-top: 10px;
+  padding: 15px;
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  flex-direction: column;
+  border-bottom: 1px solid #d3d2d2;
+  transition: 0.5s;
+  cursor: pointer;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    span:nth-child(2n) {
+      font-size: 12px;
+    }
+  }
+
+  &:hover {
+    color: #009c9c;
+    background-color: #f5f6f7;
+    border-radius: 10px;
+  }
+
+  > .translate {
+    margin-top: 20px;
+    font-size: 12px;
+    word-spacing: normal;
+    line-height: 15px;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+.currentPlaying {
+  color: #009c9c;
+  background-color: #f5f6f7;
+  border-radius: 10px;
+}

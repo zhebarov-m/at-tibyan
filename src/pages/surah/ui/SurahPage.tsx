@@ -1,4 +1,4 @@
-import AyahsList from "@/widgets/AyahsList/ui/AyahsList.tsx/AyahsList";
+import { AyahsList } from "@/widgets/AyahsList/ui/AyahsList";
 
 const SurahPage = () => {
   return (

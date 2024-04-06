@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { ISura } from "@/entities/Ayahs/model/types/ayahs";
 import Ayahs from "@/entities/Ayahs/ui/Ayahs";
 
-const AyahsList = () => {
+export const AyahsList = () => {
   const { id } = useParams();
   const [ayahs, setAyahs] = useState<ISura[]>([]);
   const [allSura, _] = useState(false);
@@ -36,5 +36,3 @@ const AyahsList = () => {
     </div>
   );
 };
-
-export default AyahsList;
