@@ -16,7 +16,7 @@ const Button: React.FC<ButtonProps> = ({
           ? "py-1 px-2 text-xs"
           : size === "large"
           ? "py-3 px-6 text-lg"
-          : "py-1 px-3 text-base"
+          : "py-1 px-3 text-xs sd:text-base lg:text-lg"
       } hover:bg-[#009c9c] hover:text-white ${className} dark:bg-gray-800 dark:hover:bg-[#009c9c] dark:text-white`}
       {...props}
     ></button>
