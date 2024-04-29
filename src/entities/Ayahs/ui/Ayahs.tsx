@@ -1,15 +1,7 @@
 import { FC } from "react";
-import { IAyahs, ISura } from "../model/types/ayahs";
-
-interface AyahsProps {
-  aya: IAyahs;
-  ayahs: ISura[];
-  allSura: boolean;
-  index: number;
-}
+import { AyahsProps } from "../model/types/ayahs";
 
 const Ayahs: FC<AyahsProps> = ({ aya, allSura, ayahs, index }) => {
-
   const isBismillah =
     aya.text.includes("بِّسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ") || // 95 97
     aya.text.includes("بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ"); // остальные

@@ -19,3 +19,10 @@ export interface IAyahs {
   hizbQuarter: number;
   sajda: boolean;
 }
+
+export interface AyahsProps {
+  aya: IAyahs;
+  ayahs: ISura[];
+  allSura: boolean;
+  index: number;
+}
