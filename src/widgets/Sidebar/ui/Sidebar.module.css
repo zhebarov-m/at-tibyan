@@ -1,13 +1,15 @@
 .sidebarContainer {
     @apply border-2
     bg-[#fff]
-    border-[#009c9c60]
     transition-all
     flex
     flex-col
     justify-between
-    absolute
-    h-[100vh]
+    fixed
+    top-[80px]
+    bottom-0
+    left-0
+    h-screen
     z-10
 }
 
